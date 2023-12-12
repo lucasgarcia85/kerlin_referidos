@@ -1,5 +1,101 @@
+/*titulo_animado***********************/
+
+.titulo_animado{
+    background-image: url(../../images/fondoprovisorio.jpg);
+
+    .parte1{
+        display: flex;
+        flex-wrap: nowrap;
+
+        .parte1_texto{
+
+        }
+
+        .parte1_imagen{
+
+            img{
+                width: 90%
+            };
+
+        }
+    }
+
+    .parte2{
+        display: flex;
+        flex-wrap: nowrap;
+
+        .parte2_texto{
+
+        }
+        .parte2_imagen{
+            
+            img{
+                width: 90%;
+            }
+
+        }
+    }
 
 
+}
+
+
+
+
+/*PROGRAMA REFERIDOS***********************************/
+.programa_referidos{
+
+     
+    h2{
+        text-align: center;
+        padding: 4rem 0rem;
+    }
+
+    .tarjetas{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-up(sm) {
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 5rem;
+            align-items: baseline;
+        }
+
+        
+        .tarjetas_info{
+            text-align: center;
+
+            h3{
+                color: black;
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 2rem 0rem;
+            }
+
+            p{
+
+                a{
+                    text-decoration: none;
+                    color: #e17a7a;
+                }
+
+                span{
+                    background-color: #e17a7a;
+                }
+            }
+
+
+
+            img{
+                width: 60%;
+                border-radius: 50%;
+            }
+        }
+    }
+
+}
 
 
 /*CONTACT FORM

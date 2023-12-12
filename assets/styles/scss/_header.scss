@@ -1,15 +1,18 @@
 header {
+        
     
     @include media-breakpoint-down(sm) {
-    position: fixed;
+    // position: fixed;
     z-index: 2;
     width: 100%;
     }
     
     
     &.sticky {
-        box-shadow: 0px 0px 6px #333;
-        background: rgb(0, 0, 0, 92%);
+        // box-shadow: 0px 0px 6px #333;
+        // background: rgb(0, 0, 0, 92%);
+        background-color: $color-blue-main;
+        transition: all 1s;
         position: fixed;
         z-index: 999;
         top: 4px;
@@ -24,6 +27,7 @@ header {
 
     .navbar{
         background-color: $color-blue-main;
+      
 
         &-toggler {
             border: 0;
@@ -137,6 +141,8 @@ header {
             transition: all 0.3s ease;
         }
     }
+
+
 
 }
 
