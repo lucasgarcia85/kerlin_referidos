@@ -97,6 +97,31 @@
 
 }
 
+/*FAQ Accordion*************************************/
+
+.faq_accordion{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10rem;
+
+    .accordion{
+       
+    }
+
+
+    .faq_imagen{
+       
+
+        img{
+            max-width: 400px;
+            
+        }
+    }
+
+}
+
 
 /*CONTACT FORM
 ****************************************/
