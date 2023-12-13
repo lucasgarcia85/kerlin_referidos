@@ -12952,15 +12952,33 @@ header .navbar-brand img {
 }
 
 /*FAQ Accordion*************************************/
-.faq_accordion {
+.faq {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   column-gap: 10rem;
 }
-.faq_accordion .faq_imagen img {
-  max-width: 400px;
+.faq .faq_accordion {
+  width: 90%;
+}
+@media (min-width: 992px) {
+  .faq .faq_accordion {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .faq .faq_accordion {
+    width: 40%;
+  }
+}
+.faq .faq_imagen img {
+  width: 90%;
+}
+@media (min-width: 1200px) {
+  .faq .faq_imagen img {
+    width: 100%;
+  }
 }
 
 /*CONTACT FORM

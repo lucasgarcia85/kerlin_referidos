@@ -99,14 +99,23 @@
 
 /*FAQ Accordion*************************************/
 
-.faq_accordion{
+.faq{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     column-gap: 10rem;
 
-    .accordion{
+    .faq_accordion{
+        width: 90%;
+
+        @include media-breakpoint-up(lg) {
+            width: 70%;  
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 40%;  
+        }
        
     }
 
@@ -115,7 +124,13 @@
        
 
         img{
-            max-width: 400px;
+           width: 90%;
+
+           @include media-breakpoint-up(xl) {
+            width: 100%;  
+        }
+
+            
             
         }
     }
