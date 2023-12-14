@@ -12519,7 +12519,7 @@ h2,
 }
 
 h1, .h1 {
-  font-size: 3.8rem;
+  font-size: 3.3rem;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -12896,7 +12896,7 @@ header .navbar-brand img {
 /*titulo_animado***********************/
 .titulo_animado {
   height: 350px;
-  padding: 5rem;
+  padding: 1rem;
   display: flex;
   flex-flow: row nowrap;
   color: white;
@@ -12909,8 +12909,14 @@ header .navbar-brand img {
 .titulo_animado .texto {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+}
+.titulo_animado .texto .texto_1 {
+  margin-left: 3rem;
+}
+.titulo_animado .texto .texto_1 p {
+  font-size: 1.8rem;
 }
 .titulo_animado .imagen {
   width: 50%;
@@ -12921,7 +12927,8 @@ header .navbar-brand img {
 }
 .titulo_animado .imagen .imagen_1 {
   position: relative;
-  top: 60px;
+  top: 85px;
+  right: 10px;
 }
 .titulo_animado .imagen .imagen_1 img {
   width: 100%;

@@ -54,71 +54,52 @@ AOS.init({
 
 });
 
-
-
 function animateSequence() {
-  let elements = [
-    document.querySelector('.texto_1'),
-    document.querySelector('.imagen_1'),
+    let elements = [
+      document.querySelector('.texto_1'),
+      document.querySelector('.imagen_1'),
+    ];
     
-  ];
+    let time = 0;
+
+// Hacer visible texto_1
+setTimeout(() => {
+  elements[0].innerHTML = '<p>Envianos tu</p><h1>REFERIDO</h1><p>interesado en una de nuestras propiedades</p><p>o que desea vender o alquilar la suya</p>';
+  elements[1].innerHTML = '<img src="assets/images/casamano2.png" alt="casa en mano">';
+  elements[0].style.opacity = 1;
+  elements[1].style.opacity = 1;
+  elements[0].style.transition = 'transform 1s';
+  elements[1].style.transition = 'transform 2s';
+  elements[1].style.transform = 'translateY(-50px)';
+}, time);
+time += 3000;
+
+ // Hacer invisible texto_1 e imagen_1
+setTimeout(() => {
+  elements[0].innerHTML = '<h2>y GANÁ</h2><p>hasta el 15%</p><p>de nuestra comisión</p><a class="nav-link" href="#contact"> Participar </a>'; 
+  elements[1].innerHTML = '<img src="assets/images/dolarenmano.png" alt="dolar en mano">';
   
-  let time = 0;
+  elements[1].style.transform = 'translateY(50px)';
+  elements[1].style.transform = 'translateX(-50px)';
+  elements[1].style.transition = 'transform 2s';
   
-  // Hacer visible texto_1
-  setTimeout(() => {
-    elements[0].style.display = 'block';
-    elements[0].style.opacity = 1;
-    elements[0].style.transition = 'transform 2s';
-  }, time);
-  time += 2000;
- 
-  // Hacer visible imagen_1
-  setTimeout(() => {
-    elements[1].style.opacity = 1;
-    elements[1].style.transform = 'translateY(-50px)';
-    elements[1].style.transition = 'transform 2s';
-  }, time);
-  time += 2000;
- 
-  // Hacer invisible texto_1 e imagen_1
-  setTimeout(() => {
-    elements[0].style.opacity = 0;
-    elements[1].style.opacity = 0;
-    elements[1].style.transform = 'translateY(50px)';
-    elements[1].style.transition = 'transform 2s';
-  }, time);
-  time += 200;
- 
-  // Hacer visible texto_2
-  setTimeout(() => {
-    elements[0].style.display = 'none';
-    elements[2].style.opacity = 1;
-    elements[2].style.transition = 'transform 2s';
-  }, time);
-  time += 2000;
- 
-  // Hacer visible imagen_2
-  setTimeout(() => {
-    elements[3].style.opacity = 1;
-    elements[3].style.transform = 'translateX(-30px)';
-    elements[3].style.transition = 'transform 2s';
-  }, time);
-  time += 2000;
- 
-  // Hacer invisible texto_2 e imagen_2
-  setTimeout(() => {
-    elements[2].style.opacity = 0;
-    elements[3].style.opacity = 0;
-    elements[3].style.transform = 'translateX(30px)';
-    elements[3].style.transition = 'transform 2s';
-  }, time);
-  time += 200;
- 
-  setTimeout(animateSequence, time); // iniciar la secuencia de nuevo cuando todas las animaciones terminen
- }
- 
- animateSequence(); // iniciar la secuencia de animación
+}, time);
+time += 2000;
+
+// Hacer invisible texto_2 e imagen_2
+setTimeout(() => {
+  // elements[0].style.opacity = 0;
+  // elements[1].style.opacity = 0;
+  elements[1].style.transform = 'translateX(40px)';
+  elements[1].style.transform = 'translateY(200px)';
+  
+}, time);
+time += 500;
+
+setTimeout(animateSequence, time); // iniciar la secuencia de nuevo cuando todas las animaciones terminen
+}
+
+animateSequence(); // iniciar la secuencia de animación
 
 
 
