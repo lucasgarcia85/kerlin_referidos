@@ -1,43 +1,131 @@
 /*titulo_animado***********************/
 
 .titulo_animado{
-    background-image: url(../../images/fondoprovisorio.jpg);
+    height: 350px;
+    padding: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+    background-color: black;
 
-    .parte1{
+    .texto_1, .imagen_1, .texto_2, .imagen_2 {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+    .texto{
+        width: 50%;
         display: flex;
-        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        
 
-        .parte1_texto{
+        .texto_1{
+
 
         }
 
-        .parte1_imagen{
+        .texto_2{
+           
 
-            img{
-                width: 90%
-            };
-
+           
+           
         }
     }
 
-    .parte2{
+    .imagen{
+        width: 50%;
+        overflow: hidden;
         display: flex;
-        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        
 
-        .parte2_texto{
+        .imagen_1{
 
-        }
-        .parte2_imagen{
-            
+            position: relative;
+            top: 60px;
             img{
-                width: 90%;
+                width: 100%;
             }
 
+        }
+        .imagen_2{
+
+            img{
+                width: 100%;
+            }
+            
+            
         }
     }
 
 
 }
+
+// .titulo_animado{
+//     height: 350px;
+//     padding: 5rem;
+//     display: flex;
+//     flex-flow: row nowrap;
+//     color: white;
+//     background-color: black;
+
+//     .texto_1, .imagen_1, .texto_2, .imagen_2 {
+//         opacity: 0;
+//         transition: opacity 0.5s ease-in-out;
+//       }
+
+//     .texto{
+//         width: 50%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+        
+
+//         .texto_1{
+
+
+//         }
+
+//         .texto_2{
+           
+
+           
+           
+//         }
+//     }
+
+//     .imagen{
+//         width: 50%;
+//         overflow: hidden;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+        
+
+//         .imagen_1{
+
+//             position: relative;
+//             top: 60px;
+//             img{
+//                 width: 100%;
+//             }
+
+//         }
+//         .imagen_2{
+
+//             img{
+//                 width: 100%;
+//             }
+            
+            
+//         }
+//     }
+
+
+// }
+
 
 
 

@@ -12895,21 +12895,39 @@ header .navbar-brand img {
 
 /*titulo_animado***********************/
 .titulo_animado {
-  background-image: url(../../images/fondoprovisorio.jpg);
-}
-.titulo_animado .parte1 {
+  height: 350px;
+  padding: 5rem;
   display: flex;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  color: white;
+  background-color: black;
 }
-.titulo_animado .parte1 .parte1_imagen img {
-  width: 90%;
+.titulo_animado .texto_1, .titulo_animado .imagen_1, .titulo_animado .texto_2, .titulo_animado .imagen_2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
-.titulo_animado .parte2 {
+.titulo_animado .texto {
+  width: 50%;
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
-.titulo_animado .parte2 .parte2_imagen img {
-  width: 90%;
+.titulo_animado .imagen {
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_animado .imagen .imagen_1 {
+  position: relative;
+  top: 60px;
+}
+.titulo_animado .imagen .imagen_1 img {
+  width: 100%;
+}
+.titulo_animado .imagen .imagen_2 img {
+  width: 100%;
 }
 
 /*PROGRAMA REFERIDOS***********************************/

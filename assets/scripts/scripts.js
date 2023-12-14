@@ -53,3 +53,149 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+
+function animateSequence() {
+  let elements = [
+    document.querySelector('.texto_1'),
+    document.querySelector('.imagen_1'),
+    
+  ];
+  
+  let time = 0;
+  
+  // Hacer visible texto_1
+  setTimeout(() => {
+    elements[0].style.display = 'block';
+    elements[0].style.opacity = 1;
+    elements[0].style.transition = 'transform 2s';
+  }, time);
+  time += 2000;
+ 
+  // Hacer visible imagen_1
+  setTimeout(() => {
+    elements[1].style.opacity = 1;
+    elements[1].style.transform = 'translateY(-50px)';
+    elements[1].style.transition = 'transform 2s';
+  }, time);
+  time += 2000;
+ 
+  // Hacer invisible texto_1 e imagen_1
+  setTimeout(() => {
+    elements[0].style.opacity = 0;
+    elements[1].style.opacity = 0;
+    elements[1].style.transform = 'translateY(50px)';
+    elements[1].style.transition = 'transform 2s';
+  }, time);
+  time += 200;
+ 
+  // Hacer visible texto_2
+  setTimeout(() => {
+    elements[0].style.display = 'none';
+    elements[2].style.opacity = 1;
+    elements[2].style.transition = 'transform 2s';
+  }, time);
+  time += 2000;
+ 
+  // Hacer visible imagen_2
+  setTimeout(() => {
+    elements[3].style.opacity = 1;
+    elements[3].style.transform = 'translateX(-30px)';
+    elements[3].style.transition = 'transform 2s';
+  }, time);
+  time += 2000;
+ 
+  // Hacer invisible texto_2 e imagen_2
+  setTimeout(() => {
+    elements[2].style.opacity = 0;
+    elements[3].style.opacity = 0;
+    elements[3].style.transform = 'translateX(30px)';
+    elements[3].style.transition = 'transform 2s';
+  }, time);
+  time += 200;
+ 
+  setTimeout(animateSequence, time); // iniciar la secuencia de nuevo cuando todas las animaciones terminen
+ }
+ 
+ animateSequence(); // iniciar la secuencia de animación
+
+
+
+
+
+
+
+
+
+
+
+
+// function animateSequence() {
+//   let elements = [
+//     document.querySelector('.texto_1'),
+//     document.querySelector('.imagen_1'),
+//     document.querySelector('.texto_2'),
+//     document.querySelector('.imagen_2')
+//   ];
+  
+//   let time = 0;
+  
+//   // Hacer visible texto_1
+//   setTimeout(() => {
+//     elements[0].style.display = 'block';
+//     elements[0].style.opacity = 1;
+//     elements[0].style.transition = 'transform 2s';
+//   }, time);
+//   time += 2000;
+ 
+//   // Hacer visible imagen_1
+//   setTimeout(() => {
+//     elements[1].style.opacity = 1;
+//     elements[1].style.transform = 'translateY(-50px)';
+//     elements[1].style.transition = 'transform 2s';
+//   }, time);
+//   time += 2000;
+ 
+//   // Hacer invisible texto_1 e imagen_1
+//   setTimeout(() => {
+//     elements[0].style.opacity = 0;
+//     elements[1].style.opacity = 0;
+//     elements[1].style.transform = 'translateY(50px)';
+//     elements[1].style.transition = 'transform 2s';
+//   }, time);
+//   time += 200;
+ 
+//   // Hacer visible texto_2
+//   setTimeout(() => {
+//     elements[0].style.display = 'none';
+//     elements[2].style.opacity = 1;
+//     elements[2].style.transition = 'transform 2s';
+//   }, time);
+//   time += 2000;
+ 
+//   // Hacer visible imagen_2
+//   setTimeout(() => {
+//     elements[3].style.opacity = 1;
+//     elements[3].style.transform = 'translateX(-30px)';
+//     elements[3].style.transition = 'transform 2s';
+//   }, time);
+//   time += 2000;
+ 
+//   // Hacer invisible texto_2 e imagen_2
+//   setTimeout(() => {
+//     elements[2].style.opacity = 0;
+//     elements[3].style.opacity = 0;
+//     elements[3].style.transform = 'translateX(30px)';
+//     elements[3].style.transition = 'transform 2s';
+//   }, time);
+//   time += 200;
+ 
+//   setTimeout(animateSequence, time); // iniciar la secuencia de nuevo cuando todas las animaciones terminen
+//  }
+ 
+//  animateSequence(); // iniciar la secuencia de animación
+
+
+ 
+ 
