@@ -1,76 +1,74 @@
 /*titulo_animado***********************/
 
 .titulo_animado{
-    height: 350px;
+    height: 300px;
     padding: 1rem;
     display: flex;
     flex-flow: row nowrap;
     color: white;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 
-    .texto_1, .imagen_1, .texto_2, .imagen_2 {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
+    
+        .texto{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
-    .texto{
-        width: 50%;
-        display: flex;
-        justify-content: left;
-        align-items: center;
+                span{
+                    color:rgb(232, 90, 90);
+                }
 
-        @include media-breakpoint-up(sm) {
-            
-        }
-        
+                .texto_1{
 
-        .texto_1{
-            margin-left:3rem;
-            
-            p{
-                font-size:1.8rem ;
+                    #frase1{
+
+                    }
+                    #frase2{
+                        color:rgb(232, 90, 90) ;
+                        
+                    }
+                    #frase3{
+                        
+                    }
+                    #frase4{
+                        
+                    }
+                    #frase5{
+                        
+                    }
+
+                }
+                .texto_2{
+                    display: none;
+                }
+              
             }
 
-        }
+        .imagen{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            
+                #img1{
+                    width: 100%;
+                }
 
-        .texto_2{
-           
-
-           
-           
-        }
+                #img2{
+                    width: 100%;
+                    display: none;
+                }
+            }   
+                
+          
     }
 
-    .imagen{
-        width: 50%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    
         
 
-        .imagen_1{
-
-            position: relative;
-            top: 85px;
-            right:10px;
-            img{
-                width: 100%;
-            }
-
-        }
-        .imagen_2{
-
-            img{
-                width: 100%;
-            }
-            
-            
-        }
-    }
+      
 
 
-}
 
 // .titulo_animado{
 //     height: 350px;
@@ -202,6 +200,7 @@
     align-items: center;
     justify-content: center;
     column-gap: 10rem;
+    row-gap: 3rem;
 
     .faq_accordion{
         width: 90%;
@@ -213,6 +212,27 @@
         @include media-breakpoint-up(xl) {
             width: 40%;  
         }
+
+        .accordion-button {
+
+            font-size: 1.4rem;
+            font-weight: 400;
+            background-color: rgb(248, 248, 248);
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1.6rem;  
+            }
+        }
+
+        .accordion-body{
+            font-size: 1.2rem;
+            background-color: rgb(251, 251, 251);
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1.3rem;  
+            }
+        }
+
        
     }
 
