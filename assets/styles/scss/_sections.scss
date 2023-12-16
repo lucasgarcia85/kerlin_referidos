@@ -1,70 +1,156 @@
 /*titulo_animado***********************/
 
 .titulo_animado{
-    height: 300px;
-    padding: 1rem;
+    height: 180px;
+    // padding: 1rem;
     display: flex;
     flex-flow: row nowrap;
     color: white;
     background-color: rgb(0, 0, 0);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    @include media-breakpoint-up(sm) {
+        height: 300px;
+        
+
+    }
+    @include media-breakpoint-up(md) {
+        height: 400px;
+        
+    }
+
+    .container{
+        
 
     
-        .texto{
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+        h1{
+            font-size: 1.8rem;
 
-                span{
-                    color:rgb(232, 90, 90);
+            @include media-breakpoint-up(sm) {
+                font-size: 2.7rem;
+                
+            }
+            @include media-breakpoint-up(md) {
+                font-size: 3.4rem;
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 4rem;  
+                    
+                                    
+            }
+                
+                
+        
+
+            :nth-child(2){
+                font-size: 3.3rem;
+                color: #e17a7a;
+
+                @include media-breakpoint-up(sm) {
+                font-size: 4.7rem;
+                
                 }
-
-                .texto_1{
-
-                    #frase1{
-
-                    }
-                    #frase2{
-                        color:rgb(232, 90, 90) ;
-                        
-                    }
-                    #frase3{
-                        
-                    }
-                    #frase4{
-                        
-                    }
-                    #frase5{
-                        
-                    }
-
+                @include media-breakpoint-up(md) {
+                font-size: 5.4rem;  
                 }
-                .texto_2{
-                    display: none;
+                
+                @include media-breakpoint-up(lg) {
+                    font-size: 6.4rem;  
+                        
+                                        
                 }
-              
             }
 
-        .imagen{
-            display: flex;
-            align-items: center;
-            width: 50%;
-            
-                #img1{
-                    width: 100%;
+            :nth-child(n+3){
+                font-size: 1.1rem;
+
+                @include media-breakpoint-up(sm) {
+                font-size: 2.1rem;
+                
+                }
+                @include media-breakpoint-up(md) {
+                font-size: 2.6rem;  
+                    
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 3rem;  
+                        
+                }
+            }
+
+            div{
+                margin: 2px 0px;
+
+                :nth-child(1){
+                    color:#e17a7a;
+                    
                 }
 
-                #img2{
-                    width: 100%;
-                    display: none;
+            }
+
+        }   
+
+        h2{
+            display: none;
+            
+            div{
+
+            }
+
+        }
+        
+        a{
+            display: none;
+        }
+    
+    }
+
+        
+        #img1{
+        
+
+            
+            width: 50%;
+            position: absolute;
+            bottom: 0%;
+            right: -7%;;
+
+                @include media-breakpoint-up(sm) {
+                    width: 60%;
+                    right:-6%;
+                    bottom: -15%;
+
                 }
-            }   
-                
-          
+                @include media-breakpoint-up(md) {
+                    width: 50%;
+                    right:-7%;
+                    bottom: -15%;
+                    
+                }
+                @include media-breakpoint-up(lg) {
+                    max-width: 43%;
+                    right:-4%;
+                    bottom: -30%;
+                    
+                }
+            }
+
+         #img2{
+            width: 100%;
+            display: none;
+            }
+             
     }
 
     
-        
+    .ocultar{
+        display: none;
+    }
+    .visible{
+        display: block;
+    }   
 
       
 
@@ -132,6 +218,43 @@
 
 
 // }
+
+
+ // .texto{
+        //         width: 50%;
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+
+        //         span{
+        //             color:rgb(232, 90, 90);
+        //         }
+
+        //         .texto_1{
+
+        //             #frase1{
+
+        //             }
+        //             #frase2{
+        //                 color:rgb(232, 90, 90) ;
+                        
+        //             }
+        //             #frase3{
+                        
+        //             }
+        //             #frase4{
+                        
+        //             }
+        //             #frase5{
+                        
+        //             }
+
+        //         }
+        //         .texto_2{
+        //             display: none;
+        //         }
+              
+        //     }
 
 
 
