@@ -61,21 +61,4 @@ AOS.init({
 
 });
 
-// function re_animate() {
-//   var element = document.querySelector('#img1');
-//   element.classList.toggle('animated');
-//  }
-//  window.setInterval(re_animate, 9000);
 
-
-// Para hacer que una animación infinita en CSS cumpla con el delay de arranque en cada ciclo, puedes utilizar la propiedad animation-iteration-count con el valor infinite y la propiedad animation-delay. Sin embargo, debido a la forma en que funcionan las animaciones CSS, el delay no se aplica en cada ciclo de la animación cuando se usa animation-iteration-count: infinite.
-
-// Una solución para este problema es utilizar JavaScript para agregar y eliminar una clase que contenga la animación. De esta manera, puedes controlar cuándo se aplica la animación y cuándo se elimina, permitiendo que el delay se aplique en cada ciclo.
-
-// Aquí tienes un ejemplo de cómo hacerlo con jQuery:
-
-// function re_animate() {
-//   $('.bounce').toggleClass('animated');
-// }
-// window.setInterval(re_animate, 2000);
- 

@@ -13054,7 +13054,7 @@ header .navbar-brand img {
   position: absolute;
   bottom: -30%;
   right: -7%;
-  animation: fadeInUp 12s 1.4s forwards infinite;
+  animation: fadeInUp 12s 1s forwards infinite;
 }
 @media (min-width: 576px) {
   .titulo_animado #img1 {
@@ -13127,10 +13127,10 @@ header .navbar-brand img {
   5% {
     opacity: 1;
   }
-  50% {
+  45% {
     opacity: 1;
   }
-  51% {
+  47% {
     opacity: 0;
   }
   100% {
@@ -13141,7 +13141,7 @@ header .navbar-brand img {
   0% {
     opacity: 0;
   }
-  5% {
+  4% {
     opacity: 1;
     transform: translateY(-50px);
   }
@@ -13161,10 +13161,10 @@ header .navbar-brand img {
     opacity: 1;
     transform: translateX(-70px);
   }
-  47% {
+  40% {
     opacity: 1;
   }
-  51% {
+  42% {
     opacity: 0;
   }
   100% {
