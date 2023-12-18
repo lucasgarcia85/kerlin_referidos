@@ -12537,6 +12537,10 @@ h2, .h2 {
   }
 }
 
+h3, .h3 {
+  padding: 5px 0px;
+}
+
 #progress-bar {
   position: fixed;
   top: 0;
@@ -12934,7 +12938,7 @@ header .navbar-brand img {
 }
 .titulo_animado .container h1 :nth-child(2), .titulo_animado .container .h1 :nth-child(2) {
   font-size: 3.3rem;
-  color: #b11f24;
+  color: #e17a7a;
 }
 @media (min-width: 576px) {
   .titulo_animado .container h1 :nth-child(2), .titulo_animado .container .h1 :nth-child(2) {
@@ -12974,7 +12978,7 @@ header .navbar-brand img {
   opacity: 0;
 }
 .titulo_animado .container h1 div :nth-child(1), .titulo_animado .container .h1 div :nth-child(1) {
-  color: #b11f24;
+  color: #e17a7a;
 }
 .titulo_animado .container h1 div:first-child, .titulo_animado .container .h1 div:first-child {
   animation: fadeInOut 10s 0.4s forwards infinite;
@@ -13034,7 +13038,7 @@ header .navbar-brand img {
   opacity: 0;
 }
 .titulo_animado .container h2 div :nth-child(1), .titulo_animado .container .h2 div :nth-child(1) {
-  color: #b11f24;
+  color: #e17a7a;
 }
 .titulo_animado .container h2 div:first-child, .titulo_animado .container .h2 div:first-child {
   animation: fadeInOut2 10s 5.7s forwards infinite;
@@ -13200,10 +13204,10 @@ header .navbar-brand img {
 }
 .programa_referidos .tarjetas .tarjetas_info p a {
   text-decoration: none;
-  color: #b11f24;
+  color: #e17a7a;
 }
 .programa_referidos .tarjetas .tarjetas_info p span {
-  background-color: #b11f24;
+  background-color: #e17a7a;
 }
 .programa_referidos .tarjetas .tarjetas_info img {
   width: 60%;
