@@ -6,7 +6,7 @@
     display: flex;
     flex-flow: row nowrap;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: $color-blue-main;
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -49,7 +49,7 @@
 
             :nth-child(2){
                 font-size: 3.3rem;
-                color: #e17a7a;
+                color:  $color-sales-2;
 
                 @include media-breakpoint-up(sm) {
                 font-size: 4.7rem;
@@ -88,7 +88,7 @@
                 opacity: 0;
 
                 :nth-child(1){
-                    color:#e17a7a;
+                    color: $color-sales-2;
                     
                 }
 
@@ -97,22 +97,22 @@
            
             div:first-child {
                 
-                animation: fadeInOut 12s 0.4s forwards  infinite;
+                animation: fadeInOut 10s 0.4s forwards  infinite;
             }
             div:nth-child(2) {
-                animation: fadeInOut 12s 0.5s forwards  infinite;
+                animation: fadeInOut 10s 0.5s forwards  infinite;
 
             }
             div:nth-child(3) {
-                animation: fadeInOut 12s 0.6s  forwards infinite;
+                animation: fadeInOut 10s 0.6s  forwards infinite;
 
             }
             div:nth-child(4) {
-                animation: fadeInOut 12s 0.7s forwards  infinite;
+                animation: fadeInOut 10s 0.7s forwards  infinite;
 
             }
             div:nth-child(5) {
-                animation: fadeInOut 12s 0.8s forwards  infinite;
+                animation: fadeInOut 10s 0.8s forwards  infinite;
 
             }
 
@@ -157,7 +157,7 @@
                 opacity: 0;
                 
                 :nth-child(1){
-                    color:#e17a7a;
+                    color: $color-sales-2;
                     
                 }
 
@@ -165,14 +165,14 @@
 
             div:first-child {
                 
-                animation: fadeInOut2 12s 6.7s  forwards infinite;
+                animation: fadeInOut2 10s 5.7s  forwards infinite;
             }
             div:nth-child(2) {
-                animation: fadeInOut2 12s 6.8s forwards  infinite;
+                animation: fadeInOut2 10s 5.8s forwards  infinite;
 
             }
             div:nth-child(3) {
-                animation: fadeInOut2 12s 6.9s forwards  infinite;
+                animation: fadeInOut2 10s 5.9s forwards  infinite;
             }
           
 
@@ -192,7 +192,7 @@
             bottom: -30%;
             right: -7%;
 
-            animation: fadeInUp 12s 1s forwards  infinite;
+            animation: fadeInUp 10s 1s forwards  infinite;
 
                 @include media-breakpoint-up(sm) {
                     width: 60%;
@@ -220,7 +220,7 @@
             position: absolute;
             right: -30%;
 
-            animation: fadeInLeft 12s 7.3s forwards  infinite;
+            animation: fadeInLeft 10s 6.3s forwards  infinite;
 
 
                 @include media-breakpoint-up(sm) {
@@ -338,7 +338,7 @@
      
     h2{
         text-align: center;
-        padding: 4rem 0rem;
+        padding: 3rem 0rem;
     }
 
     .tarjetas{
@@ -368,11 +368,11 @@
 
                 a{
                     text-decoration: none;
-                    color: #e17a7a;
+                    color:$color-sales-2;
                 }
 
                 span{
-                    background-color: #e17a7a;
+                    background-color: $color-sales-2;
                 }
             }
 
@@ -454,11 +454,12 @@
 ****************************************/
 .formulario {
     text-align: center;
-    background-color:#7d8bab;
-    background-image: url(../../images/FondoFormulario.png);
-    background-position: center top;
+    background-color:$color-gray-light;
+    background-image: url(../../images/form_section_bg.png);
     background-repeat: no-repeat;
-    color: white;
+    background-position: 10%;
+    background-size: cover;
+    color: black;
 
     .tituloFormulario{
         margin: 3rem 0 4rem;
@@ -495,10 +496,10 @@
                 }
         
                 .form-control{
-                    border-radius: 25px;
+                    // border-radius: 25px;
                     padding: 0.85rem 1rem;
                     font-size: 1.6rem;
-                    text-align: center;
+                    text-align: left;
                     
                 }
         

@@ -12502,7 +12502,7 @@ strong {
 }
 
 section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 sup {
@@ -12899,7 +12899,7 @@ header .navbar-brand img {
   display: flex;
   flex-flow: row nowrap;
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: #20396f;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -12934,7 +12934,7 @@ header .navbar-brand img {
 }
 .titulo_animado .container h1 :nth-child(2), .titulo_animado .container .h1 :nth-child(2) {
   font-size: 3.3rem;
-  color: #e17a7a;
+  color: #b11f24;
 }
 @media (min-width: 576px) {
   .titulo_animado .container h1 :nth-child(2), .titulo_animado .container .h1 :nth-child(2) {
@@ -12974,22 +12974,22 @@ header .navbar-brand img {
   opacity: 0;
 }
 .titulo_animado .container h1 div :nth-child(1), .titulo_animado .container .h1 div :nth-child(1) {
-  color: #e17a7a;
+  color: #b11f24;
 }
 .titulo_animado .container h1 div:first-child, .titulo_animado .container .h1 div:first-child {
-  animation: fadeInOut 12s 0.4s forwards infinite;
+  animation: fadeInOut 10s 0.4s forwards infinite;
 }
 .titulo_animado .container h1 div:nth-child(2), .titulo_animado .container .h1 div:nth-child(2) {
-  animation: fadeInOut 12s 0.5s forwards infinite;
+  animation: fadeInOut 10s 0.5s forwards infinite;
 }
 .titulo_animado .container h1 div:nth-child(3), .titulo_animado .container .h1 div:nth-child(3) {
-  animation: fadeInOut 12s 0.6s forwards infinite;
+  animation: fadeInOut 10s 0.6s forwards infinite;
 }
 .titulo_animado .container h1 div:nth-child(4), .titulo_animado .container .h1 div:nth-child(4) {
-  animation: fadeInOut 12s 0.7s forwards infinite;
+  animation: fadeInOut 10s 0.7s forwards infinite;
 }
 .titulo_animado .container h1 div:nth-child(5), .titulo_animado .container .h1 div:nth-child(5) {
-  animation: fadeInOut 12s 0.8s forwards infinite;
+  animation: fadeInOut 10s 0.8s forwards infinite;
 }
 .titulo_animado .container h2, .titulo_animado .container .h2 {
   font-size: 1.8rem;
@@ -13034,16 +13034,16 @@ header .navbar-brand img {
   opacity: 0;
 }
 .titulo_animado .container h2 div :nth-child(1), .titulo_animado .container .h2 div :nth-child(1) {
-  color: #e17a7a;
+  color: #b11f24;
 }
 .titulo_animado .container h2 div:first-child, .titulo_animado .container .h2 div:first-child {
-  animation: fadeInOut2 12s 6.7s forwards infinite;
+  animation: fadeInOut2 10s 5.7s forwards infinite;
 }
 .titulo_animado .container h2 div:nth-child(2), .titulo_animado .container .h2 div:nth-child(2) {
-  animation: fadeInOut2 12s 6.8s forwards infinite;
+  animation: fadeInOut2 10s 5.8s forwards infinite;
 }
 .titulo_animado .container h2 div:nth-child(3), .titulo_animado .container .h2 div:nth-child(3) {
-  animation: fadeInOut2 12s 6.9s forwards infinite;
+  animation: fadeInOut2 10s 5.9s forwards infinite;
 }
 .titulo_animado .container a {
   display: none;
@@ -13054,7 +13054,7 @@ header .navbar-brand img {
   position: absolute;
   bottom: -30%;
   right: -7%;
-  animation: fadeInUp 12s 1s forwards infinite;
+  animation: fadeInUp 10s 1s forwards infinite;
 }
 @media (min-width: 576px) {
   .titulo_animado #img1 {
@@ -13082,7 +13082,7 @@ header .navbar-brand img {
   width: 50%;
   position: absolute;
   right: -30%;
-  animation: fadeInLeft 12s 7.3s forwards infinite;
+  animation: fadeInLeft 10s 6.3s forwards infinite;
 }
 @media (min-width: 576px) {
   .titulo_animado #img2 {
@@ -13174,7 +13174,7 @@ header .navbar-brand img {
 /*PROGRAMA REFERIDOS***********************************/
 .programa_referidos h2, .programa_referidos .h2 {
   text-align: center;
-  padding: 4rem 0rem;
+  padding: 3rem 0rem;
 }
 .programa_referidos .tarjetas {
   display: grid;
@@ -13200,10 +13200,10 @@ header .navbar-brand img {
 }
 .programa_referidos .tarjetas .tarjetas_info p a {
   text-decoration: none;
-  color: #e17a7a;
+  color: #b11f24;
 }
 .programa_referidos .tarjetas .tarjetas_info p span {
-  background-color: #e17a7a;
+  background-color: #b11f24;
 }
 .programa_referidos .tarjetas .tarjetas_info img {
   width: 60%;
@@ -13264,11 +13264,12 @@ header .navbar-brand img {
 ****************************************/
 .formulario {
   text-align: center;
-  background-color: #7d8bab;
-  background-image: url(../../images/FondoFormulario.png);
-  background-position: center top;
+  background-color: #c6c4c4;
+  background-image: url(../../images/form_section_bg.png);
   background-repeat: no-repeat;
-  color: white;
+  background-position: 10%;
+  background-size: cover;
+  color: black;
 }
 .formulario .tituloFormulario {
   margin: 3rem 0 4rem;
@@ -13302,10 +13303,9 @@ header .navbar-brand img {
   }
 }
 .formulario form .datos .form-group .form-control {
-  border-radius: 25px;
   padding: 0.85rem 1rem;
   font-size: 1.6rem;
-  text-align: center;
+  text-align: left;
 }
 .formulario form .datos .form-group textarea {
   height: 178px;
