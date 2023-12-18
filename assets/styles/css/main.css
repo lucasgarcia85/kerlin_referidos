@@ -12774,8 +12774,9 @@ footer .back-to-top i {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   header {
+    position: fixed;
     z-index: 2;
     width: 100%;
   }
@@ -12898,8 +12899,18 @@ header .navbar-brand img {
 }
 
 /*titulo_animado***********************/
-.titulo_animado {
-  height: 180px;
+.hero {
+  padding-top: 83px;
+  padding-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .hero {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+}
+.hero .titulo_animado {
+  height: 200px;
   display: flex;
   flex-flow: row nowrap;
   color: white;
@@ -12909,150 +12920,150 @@ header .navbar-brand img {
   overflow: hidden;
 }
 @media (min-width: 576px) {
-  .titulo_animado {
+  .hero .titulo_animado {
     height: 300px;
   }
 }
 @media (min-width: 768px) {
-  .titulo_animado {
+  .hero .titulo_animado {
     height: 400px;
   }
 }
-.titulo_animado .container h1, .titulo_animado .container .h1 {
+.hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
   font-size: 1.8rem;
 }
 @media (min-width: 576px) {
-  .titulo_animado .container h1, .titulo_animado .container .h1 {
+  .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
     font-size: 2.7rem;
   }
 }
 @media (min-width: 768px) {
-  .titulo_animado .container h1, .titulo_animado .container .h1 {
+  .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
     font-size: 3.4rem;
   }
 }
 @media (min-width: 992px) {
-  .titulo_animado .container h1, .titulo_animado .container .h1 {
+  .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
     font-size: 4rem;
   }
 }
-.titulo_animado .container h1 :nth-child(2), .titulo_animado .container .h1 :nth-child(2) {
+.hero .titulo_animado .container h1 :nth-child(2), .hero .titulo_animado .container .h1 :nth-child(2) {
   font-size: 3.3rem;
   color: #e17a7a;
 }
 @media (min-width: 576px) {
-  .titulo_animado .container h1 :nth-child(2), .titulo_animado .container .h1 :nth-child(2) {
+  .hero .titulo_animado .container h1 :nth-child(2), .hero .titulo_animado .container .h1 :nth-child(2) {
     font-size: 4.7rem;
   }
 }
 @media (min-width: 768px) {
-  .titulo_animado .container h1 :nth-child(2), .titulo_animado .container .h1 :nth-child(2) {
+  .hero .titulo_animado .container h1 :nth-child(2), .hero .titulo_animado .container .h1 :nth-child(2) {
     font-size: 5.4rem;
   }
 }
 @media (min-width: 992px) {
-  .titulo_animado .container h1 :nth-child(2), .titulo_animado .container .h1 :nth-child(2) {
+  .hero .titulo_animado .container h1 :nth-child(2), .hero .titulo_animado .container .h1 :nth-child(2) {
     font-size: 6.4rem;
   }
 }
-.titulo_animado .container h1 :nth-child(n+3), .titulo_animado .container .h1 :nth-child(n+3) {
+.hero .titulo_animado .container h1 :nth-child(n+3), .hero .titulo_animado .container .h1 :nth-child(n+3) {
   font-size: 1.1rem;
 }
 @media (min-width: 576px) {
-  .titulo_animado .container h1 :nth-child(n+3), .titulo_animado .container .h1 :nth-child(n+3) {
+  .hero .titulo_animado .container h1 :nth-child(n+3), .hero .titulo_animado .container .h1 :nth-child(n+3) {
     font-size: 2.1rem;
   }
 }
 @media (min-width: 768px) {
-  .titulo_animado .container h1 :nth-child(n+3), .titulo_animado .container .h1 :nth-child(n+3) {
+  .hero .titulo_animado .container h1 :nth-child(n+3), .hero .titulo_animado .container .h1 :nth-child(n+3) {
     font-size: 2.6rem;
   }
 }
 @media (min-width: 992px) {
-  .titulo_animado .container h1 :nth-child(n+3), .titulo_animado .container .h1 :nth-child(n+3) {
+  .hero .titulo_animado .container h1 :nth-child(n+3), .hero .titulo_animado .container .h1 :nth-child(n+3) {
     font-size: 3rem;
   }
 }
-.titulo_animado .container h1 div, .titulo_animado .container .h1 div {
+.hero .titulo_animado .container h1 div, .hero .titulo_animado .container .h1 div {
   margin: 2px 0px;
   opacity: 0;
 }
-.titulo_animado .container h1 div :nth-child(1), .titulo_animado .container .h1 div :nth-child(1) {
+.hero .titulo_animado .container h1 div :nth-child(1), .hero .titulo_animado .container .h1 div :nth-child(1) {
   color: #e17a7a;
 }
-.titulo_animado .container h1 div:first-child, .titulo_animado .container .h1 div:first-child {
+.hero .titulo_animado .container h1 div:first-child, .hero .titulo_animado .container .h1 div:first-child {
   animation: fadeInOut 10s 0.4s forwards infinite;
 }
-.titulo_animado .container h1 div:nth-child(2), .titulo_animado .container .h1 div:nth-child(2) {
+.hero .titulo_animado .container h1 div:nth-child(2), .hero .titulo_animado .container .h1 div:nth-child(2) {
   animation: fadeInOut 10s 0.5s forwards infinite;
 }
-.titulo_animado .container h1 div:nth-child(3), .titulo_animado .container .h1 div:nth-child(3) {
+.hero .titulo_animado .container h1 div:nth-child(3), .hero .titulo_animado .container .h1 div:nth-child(3) {
   animation: fadeInOut 10s 0.6s forwards infinite;
 }
-.titulo_animado .container h1 div:nth-child(4), .titulo_animado .container .h1 div:nth-child(4) {
+.hero .titulo_animado .container h1 div:nth-child(4), .hero .titulo_animado .container .h1 div:nth-child(4) {
   animation: fadeInOut 10s 0.7s forwards infinite;
 }
-.titulo_animado .container h1 div:nth-child(5), .titulo_animado .container .h1 div:nth-child(5) {
+.hero .titulo_animado .container h1 div:nth-child(5), .hero .titulo_animado .container .h1 div:nth-child(5) {
   animation: fadeInOut 10s 0.8s forwards infinite;
 }
-.titulo_animado .container h2, .titulo_animado .container .h2 {
+.hero .titulo_animado .container h2, .hero .titulo_animado .container .h2 {
   font-size: 1.8rem;
   position: absolute;
   top: 35%;
 }
 @media (min-width: 576px) {
-  .titulo_animado .container h2, .titulo_animado .container .h2 {
+  .hero .titulo_animado .container h2, .hero .titulo_animado .container .h2 {
     font-size: 2.7rem;
   }
 }
 @media (min-width: 768px) {
-  .titulo_animado .container h2, .titulo_animado .container .h2 {
+  .hero .titulo_animado .container h2, .hero .titulo_animado .container .h2 {
     font-size: 3.4rem;
   }
 }
 @media (min-width: 992px) {
-  .titulo_animado .container h2, .titulo_animado .container .h2 {
+  .hero .titulo_animado .container h2, .hero .titulo_animado .container .h2 {
     font-size: 4rem;
   }
 }
-.titulo_animado .container h2 :nth-child(n+2), .titulo_animado .container .h2 :nth-child(n+2) {
+.hero .titulo_animado .container h2 :nth-child(n+2), .hero .titulo_animado .container .h2 :nth-child(n+2) {
   font-size: 1.1rem;
 }
 @media (min-width: 576px) {
-  .titulo_animado .container h2 :nth-child(n+2), .titulo_animado .container .h2 :nth-child(n+2) {
+  .hero .titulo_animado .container h2 :nth-child(n+2), .hero .titulo_animado .container .h2 :nth-child(n+2) {
     font-size: 2.1rem;
   }
 }
 @media (min-width: 768px) {
-  .titulo_animado .container h2 :nth-child(n+2), .titulo_animado .container .h2 :nth-child(n+2) {
+  .hero .titulo_animado .container h2 :nth-child(n+2), .hero .titulo_animado .container .h2 :nth-child(n+2) {
     font-size: 2.6rem;
   }
 }
 @media (min-width: 992px) {
-  .titulo_animado .container h2 :nth-child(n+2), .titulo_animado .container .h2 :nth-child(n+2) {
+  .hero .titulo_animado .container h2 :nth-child(n+2), .hero .titulo_animado .container .h2 :nth-child(n+2) {
     font-size: 3rem;
   }
 }
-.titulo_animado .container h2 div, .titulo_animado .container .h2 div {
+.hero .titulo_animado .container h2 div, .hero .titulo_animado .container .h2 div {
   margin: 2px 0px;
   opacity: 0;
 }
-.titulo_animado .container h2 div :nth-child(1), .titulo_animado .container .h2 div :nth-child(1) {
+.hero .titulo_animado .container h2 div :nth-child(1), .hero .titulo_animado .container .h2 div :nth-child(1) {
   color: #e17a7a;
 }
-.titulo_animado .container h2 div:first-child, .titulo_animado .container .h2 div:first-child {
+.hero .titulo_animado .container h2 div:first-child, .hero .titulo_animado .container .h2 div:first-child {
   animation: fadeInOut2 10s 5.7s forwards infinite;
 }
-.titulo_animado .container h2 div:nth-child(2), .titulo_animado .container .h2 div:nth-child(2) {
+.hero .titulo_animado .container h2 div:nth-child(2), .hero .titulo_animado .container .h2 div:nth-child(2) {
   animation: fadeInOut2 10s 5.8s forwards infinite;
 }
-.titulo_animado .container h2 div:nth-child(3), .titulo_animado .container .h2 div:nth-child(3) {
+.hero .titulo_animado .container h2 div:nth-child(3), .hero .titulo_animado .container .h2 div:nth-child(3) {
   animation: fadeInOut2 10s 5.9s forwards infinite;
 }
-.titulo_animado .container a {
+.hero .titulo_animado .container a {
   display: none;
 }
-.titulo_animado #img1 {
+.hero #img1 {
   opacity: 0;
   width: 50%;
   position: absolute;
@@ -13061,27 +13072,27 @@ header .navbar-brand img {
   animation: fadeInUp 10s 1s forwards infinite;
 }
 @media (min-width: 576px) {
-  .titulo_animado #img1 {
+  .hero #img1 {
     width: 60%;
     right: -6%;
     bottom: -27%;
   }
 }
 @media (min-width: 768px) {
-  .titulo_animado #img1 {
+  .hero #img1 {
     width: 50%;
     right: -7%;
     bottom: -25%;
   }
 }
 @media (min-width: 992px) {
-  .titulo_animado #img1 {
+  .hero #img1 {
     max-width: 43%;
     right: -4%;
     bottom: -30%;
   }
 }
-.titulo_animado #img2 {
+.hero #img2 {
   opacity: 0;
   width: 50%;
   position: absolute;
@@ -13089,19 +13100,19 @@ header .navbar-brand img {
   animation: fadeInLeft 10s 6.3s forwards infinite;
 }
 @media (min-width: 576px) {
-  .titulo_animado #img2 {
+  .hero #img2 {
     width: 60%;
     right: -20%;
   }
 }
 @media (min-width: 768px) {
-  .titulo_animado #img2 {
+  .hero #img2 {
     width: 50%;
     right: -15%;
   }
 }
 @media (min-width: 992px) {
-  .titulo_animado #img2 {
+  .hero #img2 {
     max-width: 43%;
     right: -10%;
   }
@@ -13256,6 +13267,7 @@ header .navbar-brand img {
   }
 }
 .faq .faq_imagen img {
+  text-align: center;
   width: 90%;
 }
 @media (min-width: 1200px) {
