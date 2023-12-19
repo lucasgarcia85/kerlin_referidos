@@ -13335,6 +13335,21 @@ header .navbar-brand img {
 .formulario .error-msg.visible {
   display: block;
 }
+.formulario .modal-dialog {
+  max-width: 80%;
+}
+.formulario .modal-header h2, .formulario .modal-header .h2 {
+  text-align: center;
+  width: 100%;
+}
+.formulario .modal ol {
+  list-style: none;
+  padding: 0;
+}
+.formulario .modal li,
+.formulario .modal p {
+  text-align: left;
+}
 
 /*THANK YOU
 ************************************************/

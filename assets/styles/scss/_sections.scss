@@ -543,6 +543,29 @@
     }
 
 
+    .modal {
+        &-dialog {
+            max-width: 80%;
+        }
+
+        &-header {
+            h2 {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+        li,
+        p {
+            text-align: left;
+        }
+    }
+
+
 }
 
 /*THANK YOU
