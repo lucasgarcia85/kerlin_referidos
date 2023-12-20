@@ -12533,7 +12533,7 @@ h2, .h2 {
 }
 @media (min-width: 768px) {
   h2, .h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -12910,7 +12910,7 @@ header .navbar-brand img {
   }
 }
 .hero .titulo_animado {
-  height: 200px;
+  height: 300px;
   display: flex;
   flex-flow: row nowrap;
   color: white;
@@ -12929,8 +12929,27 @@ header .navbar-brand img {
     height: 400px;
   }
 }
+@media (min-width: 992px) {
+  .hero .titulo_animado {
+    height: 600px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero .titulo_animado .container {
+    display: flex;
+    flex-flow: column;
+  }
+}
 .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
   font-size: 1.8rem;
+}
+@media (max-width: 575.98px) {
+  .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
+    text-align: left;
+    position: absolute;
+    top: 7%;
+    right: 23%;
+  }
 }
 @media (min-width: 576px) {
   .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
@@ -12944,7 +12963,7 @@ header .navbar-brand img {
 }
 @media (min-width: 992px) {
   .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 }
 .hero .titulo_animado .container h1 :nth-child(2), .hero .titulo_animado .container .h1 :nth-child(2) {
@@ -12963,7 +12982,7 @@ header .navbar-brand img {
 }
 @media (min-width: 992px) {
   .hero .titulo_animado .container h1 :nth-child(2), .hero .titulo_animado .container .h1 :nth-child(2) {
-    font-size: 6.4rem;
+    font-size: 8.5rem;
   }
 }
 .hero .titulo_animado .container h1 :nth-child(n+3), .hero .titulo_animado .container .h1 :nth-child(n+3) {
@@ -13011,6 +13030,12 @@ header .navbar-brand img {
   position: absolute;
   top: 35%;
 }
+@media (max-width: 575.98px) {
+  .hero .titulo_animado .container h2, .hero .titulo_animado .container .h2 {
+    top: 10%;
+    right: 34%;
+  }
+}
 @media (min-width: 576px) {
   .hero .titulo_animado .container h2, .hero .titulo_animado .container .h2 {
     font-size: 2.7rem;
@@ -13023,7 +13048,7 @@ header .navbar-brand img {
 }
 @media (min-width: 992px) {
   .hero .titulo_animado .container h2, .hero .titulo_animado .container .h2 {
-    font-size: 4rem;
+    font-size: 8.5rem;
   }
 }
 .hero .titulo_animado .container h2 :nth-child(n+2), .hero .titulo_animado .container .h2 :nth-child(n+2) {
@@ -13067,8 +13092,8 @@ header .navbar-brand img {
   opacity: 0;
   width: 50%;
   position: absolute;
-  bottom: -30%;
-  right: -7%;
+  bottom: -17%;
+  right: 25%;
   animation: fadeInUp 10s 1s forwards infinite;
 }
 @media (min-width: 576px) {
@@ -13087,22 +13112,31 @@ header .navbar-brand img {
 }
 @media (min-width: 992px) {
   .hero #img1 {
-    max-width: 43%;
-    right: -4%;
+    width: 65%;
+    right: -12%;
     bottom: -30%;
   }
 }
+@media (min-width: 1200px) {
+  .hero #img1 {
+    width: 65%;
+    right: -12%;
+    bottom: -35%;
+  }
+}
 .hero #img2 {
+  right: 22%;
+  bottom: 13%;
   opacity: 0;
-  width: 50%;
   position: absolute;
-  right: -30%;
+  width: 50%;
   animation: fadeInLeft 10s 6.3s forwards infinite;
 }
 @media (min-width: 576px) {
   .hero #img2 {
     width: 60%;
     right: -20%;
+    bottom: 23%;
   }
 }
 @media (min-width: 768px) {
@@ -13113,8 +13147,8 @@ header .navbar-brand img {
 }
 @media (min-width: 992px) {
   .hero #img2 {
-    max-width: 43%;
-    right: -10%;
+    width: 65%;
+    right: -18%;
   }
 }
 
