@@ -12934,6 +12934,9 @@ header .navbar-brand img {
     height: 600px;
   }
 }
+.hero .titulo_animado .container {
+  z-index: 5;
+}
 @media (max-width: 575.98px) {
   .hero .titulo_animado .container {
     display: flex;
@@ -13088,7 +13091,7 @@ header .navbar-brand img {
 .hero .titulo_animado .container a {
   display: none;
 }
-.hero #img1 {
+.hero .titulo_animado #img1 {
   opacity: 0;
   width: 50%;
   position: absolute;
@@ -13097,34 +13100,34 @@ header .navbar-brand img {
   animation: fadeInUp 10s 1s forwards infinite;
 }
 @media (min-width: 576px) {
-  .hero #img1 {
+  .hero .titulo_animado #img1 {
     width: 60%;
     right: -6%;
     bottom: -27%;
   }
 }
 @media (min-width: 768px) {
-  .hero #img1 {
+  .hero .titulo_animado #img1 {
     width: 50%;
     right: -7%;
     bottom: -25%;
   }
 }
 @media (min-width: 992px) {
-  .hero #img1 {
+  .hero .titulo_animado #img1 {
     width: 65%;
     right: -12%;
     bottom: -30%;
   }
 }
 @media (min-width: 1200px) {
-  .hero #img1 {
+  .hero .titulo_animado #img1 {
     width: 65%;
     right: -12%;
     bottom: -35%;
   }
 }
-.hero #img2 {
+.hero .titulo_animado #img2 {
   right: 22%;
   bottom: 13%;
   opacity: 0;
@@ -13133,22 +13136,113 @@ header .navbar-brand img {
   animation: fadeInLeft 10s 6.3s forwards infinite;
 }
 @media (min-width: 576px) {
-  .hero #img2 {
+  .hero .titulo_animado #img2 {
     width: 60%;
     right: -20%;
     bottom: 23%;
   }
 }
 @media (min-width: 768px) {
-  .hero #img2 {
+  .hero .titulo_animado #img2 {
     width: 50%;
     right: -15%;
   }
 }
 @media (min-width: 992px) {
-  .hero #img2 {
+  .hero .titulo_animado #img2 {
     width: 65%;
     right: -18%;
+  }
+}
+.hero .titulo_animado .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: lightblue;
+  position: absolute;
+  bottom: -57px;
+  left: 9px;
+}
+@media (min-width: 576px) {
+  .hero .titulo_animado .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .hero .titulo_animado .circle {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .titulo_animado .circle {
+    width: 220px;
+    height: 220px;
+  }
+}
+.hero .titulo_animado .oval1 {
+  width: 220px;
+  height: 110px;
+  border-radius: 60px 44px 44px 60px;
+  background: #c6c4c4;
+  position: absolute;
+  top: -78px;
+  left: -3px;
+  transform: rotate(-52deg);
+}
+@media (min-width: 576px) {
+  .hero .titulo_animado .oval1 {
+    width: 230px;
+    height: 120px;
+    top: -100px;
+    left: -15px;
+  }
+}
+@media (min-width: 992px) {
+  .hero .titulo_animado .oval1 {
+    width: 350px;
+    height: 180px;
+    top: -156px;
+    left: -9px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .titulo_animado .oval1 {
+    width: 430px;
+    height: 220px;
+  }
+}
+.hero .titulo_animado .oval2 {
+  width: 134px;
+  height: 76px;
+  border-radius: 44px 44px 44px 44px;
+  background: #b11f24;
+  position: absolute;
+  top: 103px;
+  left: -76px;
+  transform: rotate(127deg);
+}
+@media (min-width: 576px) {
+  .hero .titulo_animado .oval2 {
+    width: 180px;
+    height: 100px;
+    top: 105px;
+    left: -110px;
+  }
+}
+@media (min-width: 992px) {
+  .hero .titulo_animado .oval2 {
+    width: 220px;
+    height: 120px;
+    top: 204px;
+    left: -151px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .titulo_animado .oval2 {
+    width: 250px;
+    height: 160px;
   }
 }
 

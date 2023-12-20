@@ -38,209 +38,210 @@
             
         }
 
-        .container{
+            .container{
+                z-index: 5;
 
-            @include media-breakpoint-down(sm) {
-                display: flex;
-                flex-flow: column;
-                
-                                
-            }
-            
-
-        
-            h1{
-                font-size: 1.8rem;
-                
-                
                 @include media-breakpoint-down(sm) {
-                    text-align: left;
-                    position: absolute;
-                    top: 7%;
-                    right: 23%;
+                    display: flex;
+                    flex-flow: column;
+                    
                                     
                 }
+                
 
-                @include media-breakpoint-up(sm) {
-                    font-size: 2.7rem;
-                    
-                }
-                @include media-breakpoint-up(md) {
-                    font-size: 3.4rem;
-                }
-                @include media-breakpoint-up(lg) {
-                    font-size: 3.8rem;  
-                        
-                                        
-                }
-                    
-                    
             
-
-                :nth-child(2){
-                    font-size: 3.3rem;
-                    color:  $color-sales-2;
+                h1{
+                    font-size: 1.8rem;
+                    
+                    
+                    @include media-breakpoint-down(sm) {
+                        text-align: left;
+                        position: absolute;
+                        top: 7%;
+                        right: 23%;
+                                        
+                    }
 
                     @include media-breakpoint-up(sm) {
-                    font-size: 4.7rem;
-                    
+                        font-size: 2.7rem;
+                        
                     }
                     @include media-breakpoint-up(md) {
-                    font-size: 5.4rem;  
+                        font-size: 3.4rem;
                     }
-                    
                     @include media-breakpoint-up(lg) {
-                        font-size: 8.5rem;  
+                        font-size: 3.8rem;  
                             
                                             
                     }
-                }
-
-                :nth-child(n+3){
-                    font-size: 1.1rem;
-
-                    @include media-breakpoint-up(sm) {
-                    font-size: 2.1rem;
-                    
-                    }
-                    @include media-breakpoint-up(md) {
-                    font-size: 2.6rem;  
                         
-                    }
-                    @include media-breakpoint-up(lg) {
-                        font-size: 3rem;  
-                            
-                    }
-                }
-
-                div{
-                    margin: 2px 0px;
-                    opacity: 0;
-
-                    :nth-child(1){
-                        color: $color-sales-2;
                         
+                
+
+                    :nth-child(2){
+                        font-size: 3.3rem;
+                        color:  $color-sales-2;
+
+                        @include media-breakpoint-up(sm) {
+                        font-size: 4.7rem;
+                        
+                        }
+                        @include media-breakpoint-up(md) {
+                        font-size: 5.4rem;  
+                        }
+                        
+                        @include media-breakpoint-up(lg) {
+                            font-size: 8.5rem;  
+                                
+                                                
+                        }
                     }
 
-                }
-            
-            
-                div:first-child {
-                    
-                    animation: fadeInOut 10s 0.4s forwards  infinite;
-                }
-                div:nth-child(2) {
-                    animation: fadeInOut 10s 0.5s forwards  infinite;
+                    :nth-child(n+3){
+                        font-size: 1.1rem;
 
-                }
-                div:nth-child(3) {
-                    animation: fadeInOut 10s 0.6s  forwards infinite;
-
-                }
-                div:nth-child(4) {
-                    animation: fadeInOut 10s 0.7s forwards  infinite;
-
-                }
-                div:nth-child(5) {
-                    animation: fadeInOut 10s 0.8s forwards  infinite;
-
-                }
-
-            }   
-
-            h2{
-                font-size: 1.8rem;
-                position: absolute;
-                top: 35%;
-
-                @include media-breakpoint-down(sm){
-                    
-                    top: 10%;
-                    right: 34%;
-                }
-                
-                @include media-breakpoint-up(sm) {
-                    font-size: 2.7rem;
-                    
-                }
-                @include media-breakpoint-up(md) {
-                    font-size: 3.4rem;
-                }
-                @include media-breakpoint-up(lg) {
-                    font-size: 8.5rem;  
-                    
-                }
-                
-                :nth-child(n+2){
-                    font-size: 1.1rem;
-                    
-                    @include media-breakpoint-up(sm) {
+                        @include media-breakpoint-up(sm) {
                         font-size: 2.1rem;
                         
+                        }
+                        @include media-breakpoint-up(md) {
+                        font-size: 2.6rem;  
+                            
+                        }
+                        @include media-breakpoint-up(lg) {
+                            font-size: 3rem;  
+                                
+                        }
+                    }
+
+                    div{
+                        margin: 2px 0px;
+                        opacity: 0;
+
+                        :nth-child(1){
+                            color: $color-sales-2;
+                            
+                        }
+
+                    }
+                
+                
+                    div:first-child {
+                        
+                        animation: fadeInOut 10s 0.4s forwards  infinite;
+                    }
+                    div:nth-child(2) {
+                        animation: fadeInOut 10s 0.5s forwards  infinite;
+
+                    }
+                    div:nth-child(3) {
+                        animation: fadeInOut 10s 0.6s  forwards infinite;
+
+                    }
+                    div:nth-child(4) {
+                        animation: fadeInOut 10s 0.7s forwards  infinite;
+
+                    }
+                    div:nth-child(5) {
+                        animation: fadeInOut 10s 0.8s forwards  infinite;
+
+                    }
+
+                }   
+
+                h2{
+                    font-size: 1.8rem;
+                    position: absolute;
+                    top: 35%;
+
+                    @include media-breakpoint-down(sm){
+                        
+                        top: 10%;
+                        right: 34%;
+                    }
+                    
+                    @include media-breakpoint-up(sm) {
+                        font-size: 2.7rem;
+                        
                     }
                     @include media-breakpoint-up(md) {
-                        font-size: 2.6rem;  
-                        
+                        font-size: 3.4rem;
                     }
                     @include media-breakpoint-up(lg) {
-                        font-size: 3rem;  
+                        font-size: 8.5rem;  
                         
                     }
+                    
+                    :nth-child(n+2){
+                        font-size: 1.1rem;
+                        
+                        @include media-breakpoint-up(sm) {
+                            font-size: 2.1rem;
+                            
+                        }
+                        @include media-breakpoint-up(md) {
+                            font-size: 2.6rem;  
+                            
+                        }
+                        @include media-breakpoint-up(lg) {
+                            font-size: 3rem;  
+                            
+                        }
+                    }
+                    
+                    div{
+                        margin: 2px 0px;
+                        opacity: 0;
+                        
+                        :nth-child(1){
+                            color: $color-sales-2;
+                            
+                        }
+
+                    }
+
+                    div:first-child {
+                        
+                        animation: fadeInOut2 10s 5.7s  forwards infinite;
+                    }
+                    div:nth-child(2) {
+                        animation: fadeInOut2 10s 5.8s forwards  infinite;
+
+                    }
+                    div:nth-child(3) {
+                        animation: fadeInOut2 10s 5.9s forwards  infinite;
+                    }
+                
+
                 }
                 
-                div{
-                    margin: 2px 0px;
-                    opacity: 0;
-                    
-                    :nth-child(1){
-                        color: $color-sales-2;
-                        
-                    }
-
-                }
-
-                div:first-child {
-                    
-                    animation: fadeInOut2 10s 5.7s  forwards infinite;
-                }
-                div:nth-child(2) {
-                    animation: fadeInOut2 10s 5.8s forwards  infinite;
-
-                }
-                div:nth-child(3) {
-                    animation: fadeInOut2 10s 5.9s forwards  infinite;
+                a{
+                    display: none;
                 }
             
-
             }
-            
-            a{
-                display: none;
-            }
-        
-        }
-    }
 
-        
+
+
         #img1{
         opacity: 0;
         width: 50%;
         position: absolute;
         // bottom: -30%;  anterior a tocar mobile
         // right: -7%;   idem
-
+    
         bottom: -17%;
         right: 25%;
-
+    
         animation: fadeInUp 10s 1s forwards  infinite;
-
+    
             
-
+    
             @include media-breakpoint-up(sm) {
                 width: 60%;
                 right:-6%;
                 bottom: -27%;
-
+    
             }
             @include media-breakpoint-up(md) {
                 width: 50%;
@@ -261,7 +262,7 @@
                 
             }
         }
-
+    
         #img2{
            
         right: 22%;
@@ -272,16 +273,16 @@
         width: 50%;
         animation: fadeInLeft 10s 6.3s forwards  infinite;
         // right: -30%;
-
+    
         
         
-        @include media-breakpoint-up(sm) {
+            @include media-breakpoint-up(sm) {
                 
                 width: 60%;
                 right:-20%;
                 bottom: 23%;
                 
-
+    
             }
             @include media-breakpoint-up(md) {
                 width: 50%;
@@ -295,8 +296,107 @@
                 
                 
             }
-
+    
         }
+
+       
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: lightblue;
+            position: absolute;
+            bottom: -57px;
+            left: 9px;
+
+            @include media-breakpoint-up(sm) {
+                width: 150px;
+                height: 150px;
+                
+            }
+            @include media-breakpoint-up(lg) {
+                width: 180px;
+                height: 180px;
+           
+            }
+            @include media-breakpoint-up(xl) {
+                width: 220px;
+                height: 220px;
+               
+           }
+        }
+           
+           .oval1 {
+            width: 220px;
+            height: 110px;
+            border-radius: 60px 44px 44px 60px;
+            background: $color-gray-light;
+            position: absolute;
+            top: -78px;
+            left: -3px;
+            transform: rotate(-52deg);
+
+            @include media-breakpoint-up(sm) {
+                width: 230px;
+                height: 120px;
+                top: -100px;
+                left: -15px;
+                
+            }
+            @include media-breakpoint-up(lg) {
+                width: 350px;
+                height: 180px;
+                top: -156px;
+                left: -9px;
+           
+            }
+            @include media-breakpoint-up(xl) {
+                width: 430px;
+                height: 220px;
+               
+           }
+
+           }
+           
+           .oval2 {
+            width: 134px;
+            height: 76px;
+            border-radius: 44px 44px 44px 44px;
+            background: $color-sales;
+            position: absolute;
+            top: 103px;
+            left: -76px;
+            transform: rotate(127deg);
+
+            @include media-breakpoint-up(sm) {
+                width: 180px;
+                height: 100px;
+                top: 105px;
+                left: -110px;
+                
+            }
+            @include media-breakpoint-up(lg) {
+                width: 220px;
+                height: 120px;
+                top: 204px;
+                left: -151px;
+           
+            }
+            @include media-breakpoint-up(xl) {
+                width: 250px;
+                height: 160px;
+               
+           }
+
+           }
+
+
+
+        
+    }
+
+
+        
             
 }
 
@@ -319,7 +419,7 @@
         100%{
             opacity: 0;
         }    
-       }    
+    }    
 
     @keyframes fadeInOut2 {
         0% {
@@ -385,32 +485,7 @@
         }    
     }    
 
-    // @keyframes fadeInUp2 {
-    //     0% {
-    //         opacity: 0;
-            
-    //           }
-    //     5% {
-            
-    //         opacity: 1;
-    //         transform: translateY(-70px);
-            
-    //     }
-    //     40%{
-    //         opacity: 1;
-    //     }
-    //     42%{
-    //         opacity: 0;
-    //     }
-        
-                  
-    //     100%{
-           
-    //         transform: translateY(-70px);
-           
-    //     }    
-    // }    
-
+    
 
 /*PROGRAMA REFERIDOS***********************************/
 .programa_referidos{
