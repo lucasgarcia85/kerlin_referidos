@@ -13,12 +13,41 @@ document.querySelector(".year-copy").innerText = new Date().getFullYear();
 
 // JS para que al clickear en nav items se cierre hamburguesa
 
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarNav')
-const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-})
+
+  const navLinks = document.querySelectorAll('.nav-item')
+  const menuToggle = document.getElementById('navbarNav')
+  const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+  navLinks.forEach((l) => {
+      l.addEventListener('click', () => { bsCollapse.toggle() })
+  })
+
+  // document.addEventListener('DOMContentLoaded', (event) => {
+  //   const navLinks = document.querySelectorAll('.nav-item')
+  //   const menuToggle = document.getElementById('navbarNav')
+  //   const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+  
+  //   navLinks.forEach((l) => {
+  //       if (window.innerWidth < 992) {
+  //           l.addEventListener('click', () => { bsCollapse.toggle() })
+  //       }
+  //   })
+  // });
+
+  // codigo para reemplazar src img2 en mobile//
+
+ 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  var img = document.querySelector('img2'); // selecciona la imagen
+  if (window.innerWidth < 500) {
+      img2.src = 'assets/images/dolarenmanomobile.png'; // cambia la ruta a la imagen pequeña
+  } 
+ });
+
+ 
+ 
+
+
 
 
 /*Progress Bar scroll
