@@ -12453,7 +12453,7 @@ body {
   position: absolute;
   left: 0;
   transition: all 0.3s ease;
-  background-color: #0a245c;
+  background-color: #24314f;
   z-index: 9;
 }
 .btn.btn-primary {
@@ -12485,7 +12485,7 @@ a {
   color: #20396f;
 }
 a:hover {
-  color: #0a245c;
+  color: #24314f;
 }
 
 .container {
@@ -12553,7 +12553,7 @@ h3, .h3 {
   width: 100%;
 }
 #progress-bar span {
-  background-color: #4CAF50;
+  background-color: #b11f24;
   display: block;
   width: 0;
   height: 100%;
@@ -12609,7 +12609,7 @@ footer .masInfo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #20396f;
+  background-color: #24314f;
   padding: 5rem 0;
 }
 footer .masInfo .masInfo__datos {
@@ -12914,7 +12914,7 @@ header .navbar-brand img {
   display: flex;
   flex-flow: row nowrap;
   color: white;
-  background-color: #20396f;
+  background-color: #24314f;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -12944,7 +12944,7 @@ header .navbar-brand img {
   }
 }
 .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
 }
 @media (max-width: 575.98px) {
   .hero .titulo_animado .container h1, .hero .titulo_animado .container .h1 {
@@ -12989,7 +12989,7 @@ header .navbar-brand img {
   }
 }
 .hero .titulo_animado .container h1 :nth-child(n+3), .hero .titulo_animado .container .h1 :nth-child(n+3) {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 @media (min-width: 576px) {
   .hero .titulo_animado .container h1 :nth-child(n+3), .hero .titulo_animado .container .h1 :nth-child(n+3) {
@@ -13029,7 +13029,7 @@ header .navbar-brand img {
   animation: fadeInOut 10s 0.8s forwards infinite;
 }
 .hero .titulo_animado .container h2, .hero .titulo_animado .container .h2 {
-  font-size: 1.8rem;
+  font-size: 3.3rem;
   position: absolute;
   top: 35%;
 }
@@ -13055,7 +13055,7 @@ header .navbar-brand img {
   }
 }
 .hero .titulo_animado .container h2 :nth-child(n+2), .hero .titulo_animado .container .h2 :nth-child(n+2) {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 @media (min-width: 576px) {
   .hero .titulo_animado .container h2 :nth-child(n+2), .hero .titulo_animado .container .h2 :nth-child(n+2) {
@@ -13093,9 +13093,9 @@ header .navbar-brand img {
 }
 .hero .titulo_animado #img1 {
   opacity: 0;
-  width: 60%;
+  width: 65%;
   position: absolute;
-  bottom: -18%;
+  bottom: -26%;
   right: 12%;
   animation: fadeInUp 10s 1s forwards infinite;
 }
@@ -13136,10 +13136,10 @@ header .navbar-brand img {
 }
 .hero .titulo_animado #img2 {
   right: 35%;
-  bottom: -24%;
+  bottom: -30%;
   opacity: 0;
   position: absolute;
-  width: 30%;
+  width: 38%;
   animation: fadeInLeftMobile 10s 6.3s forwards infinite;
 }
 @media (min-width: 576px) {
