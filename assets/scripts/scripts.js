@@ -21,17 +21,7 @@ document.querySelector(".year-copy").innerText = new Date().getFullYear();
       l.addEventListener('click', () => { bsCollapse.toggle() })
   })
 
-  // document.addEventListener('DOMContentLoaded', (event) => {
-  //   const navLinks = document.querySelectorAll('.nav-item')
-  //   const menuToggle = document.getElementById('navbarNav')
-  //   const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
   
-  //   navLinks.forEach((l) => {
-  //       if (window.innerWidth < 992) {
-  //           l.addEventListener('click', () => { bsCollapse.toggle() })
-  //       }
-  //   })
-  // });
 
   // codigo para reemplazar src img2 en mobile//
 
