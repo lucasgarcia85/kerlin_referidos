@@ -14,8 +14,9 @@ require 'phpmailer/SMTP.php';
 $name = $_POST['name'];
 $telephone = $_POST['telephone'];
 $email = $_POST['email'];
-$message = $_POST['message'];
-$subject = 'Mensaje recibido desde www.loteoskerlin.com.ar';
+$name2 = $_POST['name2'];
+$telephone2 = $_POST['telephone2']
+$subject = 'Mensaje recibido desde www.referidoskerlin.com.ar';
 
 $recaptcha_secret = "6Ld8e8wkAAAAAEdq6opRmM9RV-qmVoqAnVYerI0U"; //Add secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
@@ -24,10 +25,12 @@ $response = json_decode($response, true);
 if( empty(trim($name)) ) $name = 'anonimo';
 
 $body = <<<HTML
-    <h1>Mensaje recibido desde www.loteoskerlin.com.ar</h1>
-    <p>De: $name | $email | $telephone</p>
-    <!-- <h2>Mensaje:</h2> -->
-    $message
+    <h1>Mensaje recibido desde www.referidoskerlin.com.ar</h1>
+    <H2>DATOS DE LA PERSONA QUE REFIERE</H2>
+    <p> $name | $email | $telephone</p>
+    <h2>DATOS DEL REFERIDO INTERESADO EN ALGÚN SERVICIO</h2>
+    <p> $name2 | $telephone2</p>
+    
 HTML;
 
 $mailer = new PHPMailer(true);

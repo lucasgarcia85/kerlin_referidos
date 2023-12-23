@@ -13453,8 +13453,10 @@ header .navbar-brand img {
     font-size: 1.3rem;
   }
 }
-.faq .faq_imagen img {
+.faq .faq_imagen {
   text-align: center;
+}
+.faq .faq_imagen img {
   width: 90%;
 }
 @media (min-width: 1200px) {
