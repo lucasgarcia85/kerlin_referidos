@@ -111,11 +111,11 @@ header {
 
                 &.contact-us {
                     background-color: $color-sales;
-                    padding: .2rem 1.4rem;
+                    padding: .2rem 1.8rem;
                     display: flex;
                     flex-wrap: nowrap;
                     align-items: center;
-                    border-radius: 1rem;
+                    border-radius: 2rem;
                     width: fit-content;
                     transition: all 0.3s ease;
                     @include media-breakpoint-down(lg) {
