@@ -27,12 +27,12 @@ document.querySelector(".year-copy").innerText = new Date().getFullYear();
 
  
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  var img = document.querySelector('img2'); // selecciona la imagen
-  if (window.innerWidth < 500) {
-      img2.src = 'assets/images/dolarenmanomobile.png'; // cambia la ruta a la imagen pequeña
-  } 
- });
+// document.addEventListener('DOMContentLoaded', (event) => {
+//   var img = document.querySelector('img2'); // selecciona la imagen
+//   if (window.innerWidth < 500) {
+//       img2.src = 'assets/images/dolarenmanomobile.png'; // cambia la ruta a la imagen pequeña
+//   } 
+//  });
 
  
  
