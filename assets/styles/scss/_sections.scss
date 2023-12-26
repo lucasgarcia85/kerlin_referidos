@@ -274,7 +274,7 @@
             height: 42%;
             animation: fadeInLeft 10s 6.3s forwards infinite;
             // right: -30%;
-            bottom: 6%;
+            bottom: 10%;
             z-index: 11;
 
             @include media-breakpoint-up(lg) {
@@ -307,6 +307,9 @@
             position: absolute;
             bottom: -50px;
             left: -50px;
+            animation: scale-in-center .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 1s;
+
             
             // @include media-breakpoint-up(sm) {
                 //     width: 150px;
@@ -354,7 +357,7 @@
                 width: 420px;
                 height: 420px;
                 bottom: -215px;
-                left: 52%;
+                left: 62%;
             }
         }
 
@@ -394,7 +397,7 @@
                 border-radius: 100px;
                 width: 320px;
                 height: 180px;
-                top: 35%;
+                top: 30%;
                 left: -100px;
             }
 
@@ -540,8 +543,8 @@
 
     h2 {
         text-align: center;
-        padding: 3rem 0 0;
         @include media-breakpoint-up(lg) {
+            padding: 3rem 0 0;
             padding: 3rem 0;
         }
     }
@@ -551,6 +554,7 @@
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
+        margin-top: 5rem;
         
         @include media-breakpoint-up(lg) {
             margin-top: 3rem;
@@ -692,7 +696,7 @@
 .formulario {
     text-align: center;
     background-color: $color-gray-light;
-    background-image: linear-gradient(14deg, rgb(255 255 255 / 83%), rgb(40 19 123 / 23%)), url(../../images/form_section_bg.png);
+    background-image: linear-gradient(14deg, rgb(255 255 255 / 75%), rgb(40 19 123 / 23%)), url(../../images/form_section_bg.png);
     background-repeat: no-repeat;
     background-position: 10%;
     background-size: cover;
@@ -713,7 +717,13 @@
 
     h3 {
         margin: 2.5rem 0rem;
-        font-weight: bold;
+        font-weight: 700;
+
+        &:first-child {
+            @include media-breakpoint-down(lg) {
+                margin-top: 0;
+            }
+        }
     }
 
     form {

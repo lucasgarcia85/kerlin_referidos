@@ -12417,6 +12417,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #333;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -13127,7 +13128,7 @@ header .navbar-brand img {
   position: absolute;
   height: 42%;
   animation: fadeInLeft 10s 6.3s forwards infinite;
-  bottom: 6%;
+  bottom: 10%;
   z-index: 11;
 }
 @media (min-width: 992px) {
@@ -13153,6 +13154,8 @@ header .navbar-brand img {
   position: absolute;
   bottom: -50px;
   left: -50px;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
 }
 @media (min-width: 992px) {
   .hero .titulo_animado .circle {
@@ -13190,7 +13193,7 @@ header .navbar-brand img {
     width: 420px;
     height: 420px;
     bottom: -215px;
-    left: 52%;
+    left: 62%;
   }
 }
 .hero .titulo_animado .oval1 {
@@ -13229,7 +13232,7 @@ header .navbar-brand img {
     border-radius: 100px;
     width: 320px;
     height: 180px;
-    top: 35%;
+    top: 30%;
     left: -100px;
   }
 }
@@ -13306,10 +13309,10 @@ header .navbar-brand img {
 ***********************************/
 .programa_referidos h2, .programa_referidos .h2 {
   text-align: center;
-  padding: 3rem 0 0;
 }
 @media (min-width: 992px) {
   .programa_referidos h2, .programa_referidos .h2 {
+    padding: 3rem 0 0;
     padding: 3rem 0;
   }
 }
@@ -13318,6 +13321,7 @@ header .navbar-brand img {
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 @media (min-width: 992px) {
   .programa_referidos .tarjetas {
@@ -13430,7 +13434,7 @@ header .navbar-brand img {
 .formulario {
   text-align: center;
   background-color: #c6c4c4;
-  background-image: linear-gradient(14deg, rgba(255, 255, 255, 0.83), rgba(40, 19, 123, 0.23)), url(../../images/form_section_bg.png);
+  background-image: linear-gradient(14deg, rgba(255, 255, 255, 0.75), rgba(40, 19, 123, 0.23)), url(../../images/form_section_bg.png);
   background-repeat: no-repeat;
   background-position: 10%;
   background-size: cover;
@@ -13449,7 +13453,12 @@ header .navbar-brand img {
 }
 .formulario h3, .formulario .h3 {
   margin: 2.5rem 0rem;
-  font-weight: bold;
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .formulario h3:first-child, .formulario .h3:first-child {
+    margin-top: 0;
+  }
 }
 .formulario form .datos {
   display: flex;
