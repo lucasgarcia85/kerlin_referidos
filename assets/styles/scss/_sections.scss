@@ -659,6 +659,7 @@
                 .accordion-body {
                     font-size: 1.3rem;
                     background-color: rgb(251, 251, 251);
+                    padding: 1.5rem;
         
                     @include media-breakpoint-up(sm) {
                         font-size: 1.4rem;
@@ -716,13 +717,11 @@
     }
 
     h3 {
-        margin: 2.5rem 0rem;
+        margin: 2.5rem 0rem 2rem;
         font-weight: 700;
 
         &:first-child {
-            @include media-breakpoint-down(lg) {
-                margin-top: 0;
-            }
+            margin-top: 0;
         }
     }
 
