@@ -13336,21 +13336,16 @@ header .navbar-brand img {
   margin-bottom: 2rem;
 }
 .programa_referidos .tarjetas .tarjetas_info h3, .programa_referidos .tarjetas .tarjetas_info .h3 {
-  color: black;
+  color: #000;
   font-weight: bold;
   margin: 2rem 0rem;
 }
 .programa_referidos .tarjetas .tarjetas_info p a {
-  text-decoration: none;
-  font-weight: bold;
   color: #b11f24;
-}
-.programa_referidos .tarjetas .tarjetas_info p a:hover {
-  text-decoration: underline;
 }
 .programa_referidos .tarjetas .tarjetas_info p span {
   color: #b11f24;
-  font-weight: bold;
+  font-weight: 700;
 }
 .programa_referidos .tarjetas .tarjetas_info img {
   width: 50%;
