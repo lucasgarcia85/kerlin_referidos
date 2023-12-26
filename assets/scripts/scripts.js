@@ -28,10 +28,8 @@ $(document).ready(function(){
       
       if ($("header").hasClass("sticky")) {
         var diffTop = 70;
-        console.log(diffTop);
       } else {
         var diffTop = 135;
-        console.log(diffTop);
       }
 
       e.preventDefault();
