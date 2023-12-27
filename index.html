@@ -230,7 +230,7 @@
     <section class="formulario" id="contact">
       <div class="container">
         <div class="tituloFormulario">
-          <h2>¡Solo debes intentarlo!</h2>
+          <h2>¡Solo tenés que intentarlo!</h2>
           <p>Ingresa tus datos y los de tu referido en este formulario </p>
         </div>
         
@@ -243,7 +243,7 @@
             </div>
             <div class="form-group">
               <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Teléfono*">
-              <div id="telephone-error" class="error-msg">E-mail inválido</div>
+              <div id="telephone-error" class="error-msg">Teléfono inválido</div>
             </div>
             <div class="form-group">
               <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
@@ -254,11 +254,11 @@
 
             <div class="form-group">
               <input type="text" class="form-control" id="name2" name="name2" placeholder="Nombre y Apellido*">
-              <div id="name-error" class="error-msg">Nombre inválido</div>
+              <div id="name2-error" class="error-msg">Nombre inválido</div>
             </div>
             <div class="form-group">
-              <input type="tel" class="form-control" id="telephone2" name="telephone2" placeholder="Teléfono*">
-              <div id="telephone-error" class="error-msg">E-mail inválido</div>
+              <input type="tel" class="form-control" id="telephone2" name="telephone2" placeholder="Teléfono*" >
+              <div id="telephone2-error" class="error-msg">Teléfono inválido</div>
             </div>
             <div class="form-group">
               <p class="text-start"><small>Al hacer clic en ENVIAR, acepta los <a href="#" data-bs-toggle="modal" data-bs-target="#tycModal">Términos y Condiciones</a> del Programa de Referidos Kerlin</small>.</p>
@@ -367,7 +367,7 @@
 
     <div class="footer-widget">
       <div class="widget-container">
-        <a href="https://wa.me/5493364379531?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20los%20loteos%20en%20San%20Nicolas%20de%20los%20arroyos" target="_blank"
+        <a href="https://wa.me/5493364379531?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20el%20programa%20de%20referidos" target="_blank"
           class="wwidget-button template-3"><img alt="whatsapp"
             src="https://d1v2p1s05qqabi.cloudfront.net/vendor/whatsappwidget/whatsapp.svg?v=91"></a>
       </div>
@@ -389,17 +389,21 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <script src="assets/scripts/scripts.js"></script>
-  <!-- <script>
+  <script>
     const constraints = {
       name: {
         presence: {
-          allowEmpty: false,
-        }
+          allowEmpty: false
+        },
+       format: {
+       pattern: /^[A-Za-z]+$/, // Solo permite letras
       },
+    },
       telephone: {
         presence: {
           allowEmpty: false
-        }
+         },
+        numericality: true, // Solo permite números
       },
       email: {
         presence: {
@@ -407,10 +411,19 @@
         },
         email: true
       },
-      message: {
+      name2: {
         presence: {
           allowEmpty: false
+        },
+        format: {
+        pattern: /^[A-Za-z]+$/, // Solo permite letras
         }
+      },
+      telephone2: {
+        presence: {
+          allowEmpty: false
+        },
+        numericality: true, // Solo permite números
       }
     };
 
@@ -421,7 +434,8 @@
         name: form.elements.name.value,
         telephone: form.elements.telephone.value,
         email: form.elements.email.value,
-        message: form.elements.message.value
+        name2: form.elements.name2.value,
+        telephone2: form.elements.telephone2.value,
       };
 
       const errors = validate(formValues, constraints);
@@ -440,10 +454,10 @@
       }
     }, false);
 
-    function onRecaptchaSuccess() {
-      document.getElementById('contact-form').submit();
-    }
-  </script> -->
+    // function onRecaptchaSuccess() {
+    //   document.getElementById('contact-form').submit();
+    // }
+  </script>
   <!-- SCRIPTS: End -->
 
 </body>

@@ -121,13 +121,14 @@ header {
                     @include media-breakpoint-down(lg) {
                         margin-top: 2rem;
                     }
-                    animation: shake 2s infinite;
-
                     &:hover {
                         // background-color: #009688;
                         background-color: $color-sales-2;
                     }
+                    
+                    
                     a {
+                        animation: shake 2s infinite;
                         font-weight: 400;
                         &:after {
                             display: none;
@@ -167,3 +168,4 @@ header {
     100%{scale: 1;}
 
 }
+

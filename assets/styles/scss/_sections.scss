@@ -764,8 +764,10 @@
     }
 
     .error-msg {
-        color: #f00000;
+        color: $color-sales;
+        text-align: left;
         font-size: 14px;
+        font-weight: 600;
         padding-top: 5px;
         display: none;
 

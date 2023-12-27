@@ -12888,7 +12888,6 @@ header .navbar .navbar-collapse .nav-item.contact-us {
   border-radius: 2rem;
   width: fit-content;
   transition: all 0.3s ease;
-  animation: shake 2s infinite;
 }
 @media (max-width: 991.98px) {
   header .navbar .navbar-collapse .nav-item.contact-us {
@@ -12899,6 +12898,7 @@ header .navbar .navbar-collapse .nav-item.contact-us:hover {
   background-color: #e17a7a;
 }
 header .navbar .navbar-collapse .nav-item.contact-us a {
+  animation: shake 2s infinite;
   font-weight: 400;
 }
 header .navbar .navbar-collapse .nav-item.contact-us a:after {
@@ -13480,8 +13480,10 @@ header .navbar-brand img {
   height: 178px;
 }
 .formulario .error-msg {
-  color: #f00000;
+  color: #b11f24;
+  text-align: left;
   font-size: 14px;
+  font-weight: 600;
   padding-top: 5px;
   display: none;
 }
