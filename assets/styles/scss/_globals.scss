@@ -9,6 +9,10 @@ body {
     line-height: 1.5;
     color: $color-main;
     overflow-x: hidden;
+
+    main{
+        overflow: hidden;
+    }
 }
 
 .btn {

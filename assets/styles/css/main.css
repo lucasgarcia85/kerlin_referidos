@@ -12419,6 +12419,9 @@ body {
   color: #333;
   overflow-x: hidden;
 }
+body main {
+  overflow: hidden;
+}
 
 .btn {
   color: #fff;
