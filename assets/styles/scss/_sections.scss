@@ -657,12 +657,12 @@
                     }
                 }
                 .accordion-body {
-                    font-size: 1.3rem;
+                    font-size: 1.4rem;
                     background-color: rgb(251, 251, 251);
                     padding: 1.5rem;
         
                     @include media-breakpoint-up(sm) {
-                        font-size: 1.4rem;
+                        font-size: 1.5rem;
                     }
                 }
             }

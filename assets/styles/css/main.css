@@ -13406,13 +13406,13 @@ header .navbar-brand img {
   }
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-body {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   background-color: rgb(251, 251, 251);
   padding: 1.5rem;
 }
 @media (min-width: 576px) {
   .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-body {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 .preguntas_frecuentes .faq .faq_imagen {
