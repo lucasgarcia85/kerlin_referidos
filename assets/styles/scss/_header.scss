@@ -73,10 +73,10 @@ header {
         .navbar-collapse {
             flex-grow: inherit;
 
-                //solucion al problema del click en nav bar desktop
-                @include media-breakpoint-up(lg){
-                    height: auto !important;
-                }
+            //solucion al problema del click en nav bar desktop
+            @include media-breakpoint-up(lg){
+                height: auto !important;
+            }
 
             .nav-item {
                 &:not(:last-child) {
@@ -118,18 +118,35 @@ header {
                     border-radius: 2rem;
                     width: fit-content;
                     transition: all 0.3s ease;
+                    position: relative;
+                    overflow: hidden;
                     @include media-breakpoint-down(lg) {
                         margin-top: 2rem;
                     }
+                    
                     &:hover {
-                        // background-color: #009688;
-                        background-color: $color-sales-2;
+                        &:after {
+                            width: 100%;
+                        }
                     }
-                    
-                    
+
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        width: 0;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        transition: all 0.3s ease;
+                        background-color: #e62d2d;
+                        z-index: 9;
+                    }
+
                     a {
-                        animation: shake 2s infinite;
+                        animation: shake 1.5s infinite;
                         font-weight: 400;
+                        position: relative;
+                        z-index: 10;
                         &:after {
                             display: none;
                         }
