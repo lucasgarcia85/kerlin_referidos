@@ -18,7 +18,7 @@ $name2 = $_POST['name2'];
 $telephone2 = $_POST['telephone2']
 $subject = 'Mensaje recibido desde www.referidoskerlin.com.ar';
 
-$recaptcha_secret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; //Add secret key
+$recaptcha_secret = "6LeNcEwpAAAAAJBLFpJDzilqE-aiRSPZNd3pKFd6"; //Add secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 $response = json_decode($response, true);
 
