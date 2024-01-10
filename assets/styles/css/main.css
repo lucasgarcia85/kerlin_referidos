@@ -12777,7 +12777,7 @@ footer .back-to-top {
   place-items: center;
   border-radius: 50%;
   text-decoration: none;
-  z-index: 10;
+  z-index: 11;
 }
 @media (min-width: 992px) {
   footer .back-to-top:hover {
@@ -12797,7 +12797,7 @@ footer .back-to-top i {
 @media (max-width: 991.98px) {
   header {
     position: fixed;
-    z-index: 3;
+    z-index: 12;
     width: 100%;
   }
 }
