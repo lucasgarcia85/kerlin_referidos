@@ -39,10 +39,10 @@ try {
     //Server setting
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
-    $mailer->Host = 'c1561910.ferozo.com';
+    $mailer->Host = 'dtc033.ferozo.com';
     $mailer->SMTPAuth = true;  
-    $mailer->Username = 'no-reply@c1561910.ferozo.com';
-    $mailer->Password = 'wpFD@hW1SB';                          
+    $mailer->Username = 'info@referidoskerlin.com.ar';
+    $mailer->Password = 'Rioparana79/';                          
     $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 465;
     //$mailer->AltBody = strip_tags($body);
@@ -50,7 +50,7 @@ try {
 
     //Recipients
     $mailer->setFrom( $email, "$name" );
-    $mailer->addAddress('no-reply@c1561910.ferozo.com','Sitio web');
+    $mailer->addAddress('info@referidoskerlin.com.ar','Sitio web');
 
     //Content
     $mailer->isHTML(true);
