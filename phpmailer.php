@@ -39,10 +39,10 @@ try {
     //Server setting
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
-    $mailer->Host = 'dtc033.ferozo.com';
+    $mailer->Host = 'c1712239.ferozo.com';
     $mailer->SMTPAuth = true;  
     $mailer->Username = 'info@referidoskerlin.com.ar';
-    $mailer->Password = 'Rioparana79/';                          
+    $mailer->Password = 'Rioparana7/';                          
     $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 465;
     //$mailer->AltBody = strip_tags($body);
