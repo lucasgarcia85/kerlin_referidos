@@ -15,7 +15,7 @@ $name = $_POST['name'];
 $telephone = $_POST['telephone'];
 $email = $_POST['email'];
 $name2 = $_POST['name2'];
-$telephone2 = $_POST['telephone2']
+$telephone2 = $_POST['telephone2'];
 $subject = 'Mensaje recibido desde www.referidoskerlin.com.ar';
 
 $recaptcha_secret = "6LeNcEwpAAAAAJBLFpJDziIqE-aiRSPZNd3pKFd6"; //Add secret key
@@ -45,8 +45,8 @@ try {
     $mailer->Password = 'Rioparana7/';                          
     $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 465;
-    //$mailer->AltBody = strip_tags($body);
-    //$mailer->CharSet = 'UTF-8';
+    $mailer->AltBody = strip_tags($body);
+    $mailer->CharSet = 'UTF-8';
 
     //Recipients
     $mailer->setFrom( $email, "$name" );
@@ -54,7 +54,6 @@ try {
 
     //Content
     $mailer->isHTML(true);
-    //$mailer->msgHTML($body);
     $mailer->Subject = $subject;
     $mailer->msgHTML($body);
     $mailer->AltBody = strip_tags($body);
