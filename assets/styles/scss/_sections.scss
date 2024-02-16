@@ -599,8 +599,14 @@
                 width: 50%;
                 border-radius: 50%;
 
-                @include media-breakpoint-up(sm) {
-                    width: 60%;
+                @include media-breakpoint-up(lg) {
+                    height: 230px;
+                    width: auto;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    height: 280px;
+                    width: auto;
                 }
             }
         }
